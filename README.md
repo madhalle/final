@@ -1,6 +1,6 @@
 **Iteration 1**
 Use TDD to create an Employee class that responds to the following interaction pattern:
-
+```
 pry(main)> require './lib/employee'
 # => true
 
@@ -15,11 +15,12 @@ pry(main)> bobbi.age
 
 pry(main)> bobbi.salary
 # => 100000
+```
 
 
 **Iteration 2**
 Use TDD to create a Department class that responds to the following interaction pattern:
-
+```
 pry(main)> require './lib/department'
 # => true
 
@@ -57,3 +58,4 @@ pry(main)> customer_service.expense(25)
 
 pry(main)> customer_service.expenses
 # => 125
+```
