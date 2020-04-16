@@ -24,19 +24,11 @@ class DepartmentTest < Minitest::Test
     @customer_service.hire(@aaron)
     assert_equal [@bobbi, @aaron], @customer_service.employees
   end
+
+  def test_customer_expenses
+    assert_equal 0, @customer_service.expenses
+    @customer_service.expense(100)
+    @customer_service.expense(25)
+    assert_equal 125, @customer_service.expenses
+  end
 end
-
-
-
-
-
-
-# pry(main)> customer_service.expenses
-# # => 0
-#
-# pry(main)> customer_service.expense(100)
-#
-# pry(main)> customer_service.expense(25)
-#
-# pry(main)> customer_service.expenses
-# # => 125
