@@ -18,20 +18,19 @@ class DepartmentTest < Minitest::Test
     assert_equal "Customer Service", @customer_service.name
     assert_equal [], @customer_service.employees
   end
+
+  def test_can_hire_employees
+    @customer_service.hire(@bobbi)
+    @customer_service.hire(@aaron)
+    assert_equal [@bobbi, @aaron], @customer_service.employees
+  end
 end
 
 
 
 
-# # => #<Employee:0x00007fce46a610a0...>
-#
-# pry(main)> customer_service.hire(bobbi)
-#
-# pry(main)> customer_service.hire(aaron)
-#
-# pry(main)> customer_service.employees
-# # => [#<Employee:0x00007fce46194788...>, #<Employee:0x00007fce46a610a0...>]
-#
+
+
 # pry(main)> customer_service.expenses
 # # => 0
 #
