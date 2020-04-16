@@ -1,4 +1,4 @@
-Iteration 1
+**Iteration 1**
 Use TDD to create an Employee class that responds to the following interaction pattern:
 
 pry(main)> require './lib/employee'
@@ -15,7 +15,9 @@ pry(main)> bobbi.age
 
 pry(main)> bobbi.salary
 # => 100000
-Iteration 2
+
+
+**Iteration 2**
 Use TDD to create a Department class that responds to the following interaction pattern:
 
 pry(main)> require './lib/department'
