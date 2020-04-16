@@ -8,18 +8,12 @@ class EmployeeTest < Minitest::Test
   end
 
   def test_it_exists
-    assert_instance_of Employee, @bobbi 
+    assert_instance_of Employee, @bobbi
+  end
+
+  def test_it_has_attributes
+    assert_equal "Bobbi Jaeger",@bobbi.name
+    assert_equal 30, @bobbi.age
+    assert_equal 100000, @bobbi.salary
   end
 end
-
-#
-# # => #<Employee:0x00007fdfd48af848...>
-#
-# pry(main)> bobbi.name
-# # => "Bobbi Jaeger"
-#
-# pry(main)> bobbi.age
-# # => 30
-#
-# pry(main)> bobbi.salary
-# # => 100000
